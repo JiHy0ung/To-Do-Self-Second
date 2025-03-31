@@ -1,0 +1,185 @@
+@import url('https://fastly.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+@font-face {
+    font-family: 'HakgyoansimDunggeunmisoTTF-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HakgyoansimDunggeunmisoTTF-R';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-R.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    background-image: url('images/background_minecraft.webp');
+    background-size: cover;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Galmuri11', sans-serif;
+    text-align: center;
+    height: 100vh;
+    padding-block: 50px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 0 rgb(0, 0, 0),
+    -1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0);
+    user-select: none;
+}
+
+.input-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.task-input{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-block: 10px;
+    padding-inline: 15px;
+    outline: none;
+    width: 60vh;
+}
+
+.task-input::placeholder{
+    color: rgb(176, 176, 176);
+}
+
+.add-button{
+    height: 47px;
+    width: 47px;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(61, 61, 61);
+    user-select: none;
+}
+
+.add-button:active{
+    transform: scale(0.96);
+    color: white;
+    background-color: rgb(165, 165, 165);
+}
+
+.tabs{
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+    user-select: none;
+}
+
+.tabs div{
+    cursor: pointer;
+    background-color: rgb(216, 216, 216);
+    box-shadow: 2px 2px 0 black,
+    0 0 4px rgba(0, 0, 0, 0.5);
+    padding-inline: 2em;
+    padding-block: 0.5em;
+}
+
+.tabs div:active{
+    color: white;
+    background-color: rgb(165, 165, 165);
+    transform: scale(0.95);
+}
+
+.tabs div.active {
+    color: white;
+    background-color: rgb(165, 165, 165);
+}
+
+.task{
+    justify-content: center;
+    align-items: center;
+    padding-block: 1em;
+}
+
+.task-board{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    height: 60vh;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1em;
+}
+
+.task-list{
+    flex-grow: 1;
+    color: rgb(255, 255, 255);
+    margin-inline: 50px;
+    padding-block: 3px;
+}
+
+.working-list{
+    flex-grow: 1;
+    color: rgb(255, 255, 255);
+    padding-block: 3px;
+}
+
+.done-list{
+    flex-grow: 1;
+    text-decoration: line-through;
+    color: rgb(255, 255, 255);
+    padding-block: 3px;
+    background-color: black;
+}
+
+.buttons{
+    font-size: larger;
+    user-select: none;
+}
+
+.check-button{
+    background-color: rgb(216, 216, 216);
+    margin-inline: 10px;
+    padding-inline: 8px;
+    padding-block: 2px;
+}
+
+.check-button2{
+    color:lawngreen;
+    background-color: rgb(216, 216, 216);
+    margin-inline: 10px;
+    padding-inline: 8px;
+    padding-block: 2px;
+}
+
+.check-button:active{
+    color:lawngreen;
+    background-color: rgb(165, 165, 165);
+    transform: scale(0.95);
+}
+
+.delete-button{
+    background-color: rgb(216, 216, 216);
+}
+
+.delete-button:active{
+    background-color: rgb(165, 165, 165);
+    transform: scale(0.95);
+}
