@@ -1,6 +1,8 @@
 # CoNoo Second Java Scrip Project
 
 **To Do List Self(2)**
+<br>
+### **[✏️프로젝트 바로가기✏️](https://jihyoung-to-do-list-self-second.netlify.app/)**
 
 ## **느낀점**
 이게 강의를 보지 않고 두번째로 혼자 작성한 코드인데
